@@ -1,0 +1,26 @@
+{
+  "name": "xpop",
+  "version": "1.0.0",
+  "description": "Generate xPOP based on source data (ledger, tx, validations)",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "minify": "cat ./browser.js | terser --compress --mangle > browser.min.js",
+    "browserify": "browserify -p esmify -r ./index.mjs:xpop -o browser.js && npm run minify"
+  },
+  "files": [
+    "index.mjs",
+    "browser.js",
+    "browser.min.js"
+  ],
+  "author": "Wietse Wind <w@xrpl-labs.com>",
+  "license": "MIT",
+  "dependencies": {
+    "xpopgen": "^1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "esmify": "^2.1.1",
+    "terser": "^5.21.0"
+  }
+}
