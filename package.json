@@ -1,6 +1,6 @@
 {
   "name": "xpop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate xPOP based on source data (ledger, tx, validations)",
   "main": "index.mjs",
   "type": "module",
