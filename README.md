@@ -1,4 +1,4 @@
-# XPOP Fetching / Generation
+# XPOP Fetching / Generation [![npm version](https://badge.fury.io/js/xpop.svg)](https://badge.fury.io/js/xpop)
 
 This lib. fetches a ready to use xPOP, fetches and encodes a JSON xPOP or
 even generates the entire xPOP based on sources running the xPOP source
