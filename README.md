@@ -14,11 +14,10 @@ Methods to retrieve/generate, in order (unless params provided, see below):
 
 `null` (failed) or HEX encoded XPOP ready to use for import in the `Blob` field.
 
-## NPM
+## NPM, CDN
 
-https://www.npmjs.com/package/xpop
-
-# Use
+- NPM (backend): https://www.npmjs.com/package/xpop
+- CDN (browser): https://cdn.jsdelivr.net/npm/xpop/browser.min.js
 
 ## Methods
 
