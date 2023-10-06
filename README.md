@@ -14,11 +14,10 @@ Methods to retrieve/generate, in order (unless params provided, see below):
 
 `null` (failed) or HEX encoded XPOP ready to use for import in the `Blob` field.
 
-## NPM
+## NPM, CDN
 
-https://www.npmjs.com/package/xpop
-
-# Use
+- NPM (backend): https://www.npmjs.com/package/xpop
+- CDN (browser): https://cdn.jsdelivr.net/npm/xpop/browser.min.js
 
 ## Methods
 
@@ -34,7 +33,7 @@ const {setVerbose, setEndpoints, xpop} = require('xpop')
 // setVerbose(true)
 
 setEndpoints([
-  https://9477cbcacca3.ngrok.app'
+  'https://9477cbcacca3.ngrok.app'
 ])
 
 xpop('20D193C6E615D86BCC13A5DAB781852A6672F3E627D33FBAE62053F1178740BB', 41815218, 1, true)
