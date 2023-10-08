@@ -27,10 +27,15 @@ Methods to retrieve/generate, in order (unless params provided, see below):
 
 ## JS/Browser
 
+Note: a list of recent endpoints can be found here:
+- https://xrpl.ws-stats.com/xpop/list
+- https://xrpl.ws-stats.com/xpop/list?json=true (see auto-fill example below)
+
 ```javascript
 const {setVerbose, setEndpoints, xpop} = require('xpop')
 
 // setVerbose(true)
+// setEndpoints((await (await fetch('https://xrpl.ws-stats.com/xpop/list?json=true')).json()).bestguess)
 
 setEndpoints([
   'https://xpop.xrplwin.com/',  // Twitter: @XRPLWin
