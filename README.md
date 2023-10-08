@@ -33,9 +33,9 @@ const {setVerbose, setEndpoints, xpop} = require('xpop')
 // setVerbose(true)
 
 setEndpoints([
-  'http://xpop.xrplwin.com:3000', // Twitter: @XRPLWin
-  'http://xpop.katczynski.org',   // Twitter: @realkatczynski
-  'https://xpop.xrpl-labs.com',   // Twitter: @XRPLLabs
+  'https://xpop.xrplwin.com/',  // Twitter: @XRPLWin
+  'http://xpop.katczynski.org', // Twitter: @realkatczynski
+  'https://xpop.xrpl-labs.com', // Twitter: @XRPLLabs
 ])
 
 xpop('20D193C6E615D86BCC13A5DAB781852A6672F3E627D33FBAE62053F1178740BB', 41815218, 1, true)
