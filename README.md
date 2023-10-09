@@ -19,6 +19,9 @@ Methods to retrieve/generate, in order (unless params provided, see below):
 - NPM (backend): https://www.npmjs.com/package/xpop
 - CDN (browser): https://cdn.jsdelivr.net/npm/xpop/browser.min.js
 
+Example browser implementation:
+- https://jsfiddle.net/WietseWind/42kpm0hr/
+
 ## Methods
 
 - `setVerbose(bool)` » `console.log` verbose info if true
