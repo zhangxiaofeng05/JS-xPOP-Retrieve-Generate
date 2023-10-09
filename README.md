@@ -10,6 +10,14 @@ Methods to retrieve/generate, in order (unless params provided, see below):
 2. Fetch JSON XPOP and encode to HEX
 3. Fetch source files & compile XPOP & encode to HEX
 
+## Samples
+
+Sample to generate & submit a B2M transaction on Testnet, resulting in an xPOP:
+- https://gist.github.com/WietseWind/cd8a7a8c88f218fe7b768f59a665685d
+
+Sample to use this script in the browser:
+- https://jsfiddle.net/WietseWind/42kpm0hr/
+
 ## Output
 
 `null` (failed) or HEX encoded XPOP ready to use for import in the `Blob` field.
