@@ -78,3 +78,44 @@ xpop('20D193C6E615D86BCC13A5DAB781852A6672F3E627D33FBAE62053F1178740BB', 4181521
 // tx hash, ledger index, network id, true (force)
 xpop('20D193C6E615D86BCC13A5DAB781852A6672F3E627D33FBAE62053F1178740BB', 41815218, 1, true)
 ```
+
+## httpServer
+env
+```
+node v18.16.0
+npm 9.5.1
+```
+install dependencies
+```
+npm install
+```
+run
+```
+npm run httpServer
+```
+wrap method
+```shell
+# setVerbose
+curl --location 'http://127.0.0.1:8080/setVerbose' \
+--header 'Content-Type: application/json' \
+--data '{
+    "setVerbose": true
+}'
+
+# setEndpoints
+curl --location 'http://127.0.0.1:8080/setEndpoints' \
+--header 'Content-Type: application/json' \
+--data '{
+    "setEndpoints": ["https://xpop.xrplwin.com/","http://xpop.katczynski.org","https://xpop.xrpl-labs.com"]
+}'
+
+# xpop
+curl --location 'http://127.0.0.1:8080/xpop' \
+--header 'Content-Type: application/json' \
+--data '{
+    "txHash": "20D193C6E615D86BCC13A5DAB781852A6672F3E627D33FBAE62053F1178740BB",
+    "ledgerIndex": 41815218,
+    "networkId": 1,
+    "forceFromSource": true
+}'
+```

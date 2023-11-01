@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "minify": "cat ./browser.js | terser --compress --mangle > browser.min.js",
-    "browserify": "browserify -p esmify -r ./index.mjs:xpop -o browser.js && npm run minify"
+    "browserify": "browserify -p esmify -r ./index.mjs:xpop -o browser.js && npm run minify",
+    "httpServer": "babel-node httpServer.js"
   },
   "files": [
     "index.mjs",
@@ -24,10 +25,22 @@
   "homepage": "https://github.com/Xahau/JS-xPOP-Retrieve-Generate/#readme",
   "license": "MIT",
   "dependencies": {
+    "bn.js": "^5.2.1",
+    "inherits": "^2.0.4",
+    "koa": "^2.14.2",
+    "koa-bodyparser": "^4.4.1",
+    "koa-router": "^12.0.1",
+    "xpop": "^1.0.5",
     "xpopgen": "^1.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/register": "^7.22.15",
     "browserify": "^17.0.0",
+    "eslint": "^8.52.0",
     "esmify": "^2.1.1",
     "terser": "^5.21.0"
   }
